@@ -6,3 +6,4 @@ Programs completed:
 3. I2C LCD
 4. SPI Communication
 5. Master Slave Communication
+6. servo 
