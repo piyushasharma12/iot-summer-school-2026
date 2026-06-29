@@ -1,1 +1,0 @@
-# iot-summer-school-2026
