@@ -1,36 +1,45 @@
-# Week 2 - IoT Summer School 2026
+# Week 2
 
-## Overview
+## About
 
-This folder contains the programs and practical work completed during Week 2 of the IIT Jammu Summer School 2026. The activities focused on Arduino programming, LED control, LCD interfacing, and Tinkercad simulations.
-
-## Topics Covered
-
-- Arduino Programming
-- Tinkercad Simulation
-- LED Interfacing
-- LCD Display
-- Basic Embedded Systems Programming
+In Week 2, I continued learning Arduino programming by working on LED and LCD-based projects in Tinkercad. These activities helped me understand how to control outputs and display information using an LCD.
 
 ## Programs Completed
 
 1. Initial Display on LED
 2. LCD Display in Tinkercad
 
-## Tools Used
+## Components Used
+
+- Arduino Uno
+- LEDs
+- 16×2 LCD Display
+- Breadboard
+- Resistors
+- Jumper Wires
+
+## Software Used
 
 - Arduino IDE
 - Tinkercad
-- Arduino Uno
 - GitHub
 
-## Learning Outcomes
+## Program Details
 
-- Learned to simulate Arduino circuits using Tinkercad.
-- Understood LED interfacing and digital output control.
-- Learned to interface and program an LCD display.
-- Improved Arduino programming and circuit design skills.
+- **Initial Display on LED:** Wrote a simple Arduino program to control LEDs and understand basic digital output.
+- **LCD Display:** Displayed text on a 16×2 LCD using Arduino in Tinkercad.
 
-- 
-- screenshots are uploaded  in week 2 screenshot file 
+## Outcome
 
+Both programs were successfully simulated in Tinkercad and produced the expected output.
+
+## What I Learned
+
+- Improved my Arduino programming skills.
+- Learned how to connect and use an LCD display.
+- Understood the basics of LED control.
+- Gained more practice with circuit simulation in Tinkercad.
+
+## Screenshots
+
+The screenshots of all the simulations and outputs for Week 2 are available in the **Screenshots** folder.
