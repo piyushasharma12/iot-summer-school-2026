@@ -38,6 +38,7 @@ All the programs were successfully simulated in Tinkercad and worked as expected
 - Learned the basics of Arduino programming.
 - Understood how to connect and test basic electronic components.
 - Learned how digital inputs and outputs work.
+- 
 - Got familiar with creating and testing circuits in Tinkercad.
 
 ## Screenshots
