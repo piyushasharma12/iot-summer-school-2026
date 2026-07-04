@@ -10,3 +10,4 @@ This folder contains the assignments completed during the IoT Summer School 2026
 ## Learning
 
 These assignments helped me understand Arduino programming, ESP32, IoT communication protocols, sensors, and embedded system concepts.
+
