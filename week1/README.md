@@ -33,6 +33,7 @@ All programs were successfully simulated and tested.
 - Understood digital and analog inputs/outputs.
 - Interfaced sensors and actuators.
 - Gained experience with circuit design and debugging.
+  
 
 ## Screenshots
 
