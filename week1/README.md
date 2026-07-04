@@ -34,3 +34,7 @@ All programs were successfully simulated and tested.
 - Interfaced sensors and actuators.
 - Gained experience with circuit design and debugging.
 
+## Screenshots
+
+The screenshots of all circuit simulations and program outputs  are available in the **Screenshots** folder of this directory.
+
