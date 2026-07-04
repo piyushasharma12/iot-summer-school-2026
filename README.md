@@ -110,7 +110,6 @@ Project screenshots and hardware outputs are available inside the **Screenshots*
 I would like to thank the mentors and organizers of the **IoT Summer School 2026 at IIT Jammu** for providing valuable guidance and practical learning opportunities throughout the program.
 
 
-**Piyusha**  
-**Roll No.: IOT027**  
+**Piyusha Sharma**  
 **IoT Summer School 2026**  
 **IIT Jammu**
