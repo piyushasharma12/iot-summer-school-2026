@@ -31,3 +31,6 @@ This folder contains the programs and practical work completed during Week 2 of 
 - Learned to interface and program an LCD display.
 - Improved Arduino programming and circuit design skills.
 
+- 
+- screenshots are uploaded  in week 2 screenshot file 
+
