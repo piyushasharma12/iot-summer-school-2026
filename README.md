@@ -1,73 +1,116 @@
 # IoT Summer School 2026
 
+## About the Repository
+
+This repository contains all the assignments, Arduino and ESP32 programs, and IoT projects completed during the **IoT Summer School 2026** at **IIT Jammu**.
+
+The repository is organized week-wise to document my learning journey, practical implementations, and assignments throughout the course.
+
 ## Student Details
 
-**Name:** Piyusha Sharma  
-**Roll No:** IOT027  
+**Name:** Piyusha  
 
-## About This Repository
-
-This repository contains my work completed during the IIT Jammu Summer School 2026 - IoT & Embedded Systems Program.
-
-It includes Arduino programs, simulations, sensor interfacing, and IoT-based experiments completed during Week 1 and Week 2.
 
 ## Repository Structure
 
-## Week 1 Topics Covered
+```
+IoT-Summer-School-2026
+│
+├── Assignment
+│   ├── Assignment_Questions.pdf
+│   ├── Assignment_Solutions.pdf
+│   └── README.md
+│
+├── Week 1
+│   ├── README.md
+│   ├── Programs
+│   ├── Screenshots
+│   └── Tinkercad_Links.md
+│
+├── Week 2
+│   ├── README.md
+│   ├── Programs
+│   ├── Screenshots
+│   └── Simulation_Links.md
+│
+│
+└── README.md
 
-- Introduction to IoT
-- Arduino basics
-- Microcontrollers
-- LED interfacing
-- Digital and Analog signals
-- Sensor basics
-- Tinkercad simulations
-- Basic Arduino programming
+## Project Overview
 
-### Week 1 Programs
+During the IoT Summer School, I worked on various embedded systems and Internet of Things (IoT) projects using Arduino and ESP32. The activities included circuit simulations, hardware implementations, communication protocols, sensor interfacing, and cloud-based IoT applications.
+
+Some of the major projects include:
 
 - LED Blinking
-- LED Fade In/Fade Out
-- Smart Street Light using LDR
-- LED Matrix
-- Seven Segment Display
-- I2C LCD Interface
-- SPI Communication
-- Master-Slave Communication
+- LDR Smart Street Light
+- Push Button Interface
+- Servo Motor Control
+- I2C LCD Display
+- ESP32 Deep Sleep Mode
+- Room Comfort Automation
+- Google Sheets Data Logging
+- IoT Sensor Monitoring
 
-## Week 2 Topics Covered
-
-- Sensors and Actuators
-- Data acquisition
-- Arduino programming concepts
-- Communication interfaces
-- Practical IoT applications
-
-### Week 2 Programs
-
-- Sensor-based projects
-- Arduino experiments
-- IoT simulations
-- Hardware interfacing tasks
-
-## Tools Used
+## Tools and Technologies Used
 
 - Arduino IDE
-- Tinkercad
 - ESP32
-- GitHub
-- Embedded C/C++
+- Arduino Uno
+- Tinkercad
+- Wokwi
+- Git & GitHub
+- Google Sheets
+- C/C++ Programming
+
+## Components Used
+
+- ESP32
+- Arduino Uno
+- LED
+- DHT11 Sensor
+- LDR Sensor
+- Push Button
+- Servo Motor
+- OLED Display
+- LCD (I2C)
+- Breadboard
+- Jumper Wires
+- Resistors
 
 ## Learning Outcomes
 
-Through this summer school, I learned about:
-- IoT fundamentals
-- Programming microcontrollers
-- Interfacing sensors and components
-- Creating simulations
-- Managing projects using GitHub
+Through this summer school, I learned:
 
-## Author
+- Arduino Programming Fundamentals
+- ESP32 Programming
+- Sensor Interfacing
+- IoT System Development
+- Communication Protocols (UART, SPI, I2C)
+- Cloud Data Logging
+- Circuit Design and Simulation
+- Hardware Debugging
+- Version Control using Git and GitHub
 
-**Piyusha Sharma**  
-IIT Jammu Summer School 2026
+## Screenshots
+
+Project screenshots and hardware outputs are available inside the **Screenshots** folder of each week's directory.
+
+## Future Improvements
+
+- Develop more advanced IoT projects.
+- Create a web dashboard for real-time monitoring.
+- Integrate MQTT-based communication.
+- Improve hardware design and documentation.
+- Explore additional cloud platforms for IoT applications.
+
+
+## Acknowledgements
+
+I would like to thank the mentors and organizers of the **IoT Summer School 2026 at IIT Jammu** for providing valuable guidance and practical learning opportunities throughout the program.
+
+
+**Piyusha**  
+**Roll No.: IOT027**  
+**IoT Summer School 2026**  
+**IIT Jammu**
