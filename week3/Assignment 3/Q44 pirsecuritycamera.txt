@@ -1,0 +1,122 @@
+#include <WiFi.h>
+
+// ================= PINS =================
+#define PIR_PIN 27
+#define BUZZER_PIN 25
+
+#define LED_GREEN 18
+#define LED_YELLOW 19
+#define LED_RED 21
+
+// ================= TIME WINDOW =================
+int startHour = 0;
+int endHour = 24;
+bool windowSet = false;
+
+int currentHour = 12;
+
+// ================= BUZZER PWM (FIX FOR MUTE ISSUE) =================
+#define BUZZER_CHANNEL 0
+
+// ================= SETUP =================
+void setup() {
+
+  Serial.begin(115200);
+
+  pinMode(PIR_PIN, INPUT);
+
+  pinMode(LED_GREEN, OUTPUT);
+  pinMode(LED_YELLOW, OUTPUT);
+  pinMode(LED_RED, OUTPUT);
+
+  // IMPORTANT FIX: PWM buzzer works in Wokwi + ESP32
+  ledcAttach(BUZZER_PIN, 2000, 8);
+
+  Serial.println("PIR Security System Ready");
+}
+
+// ================= SERIAL COMMAND =================
+void readCommand() {
+
+  if (Serial.available()) {
+
+    String cmd = Serial.readStringUntil('\n');
+
+    if (cmd.startsWith("SET_HOURS")) {
+
+      sscanf(cmd.c_str(), "SET_HOURS %d %d", &startHour, &endHour);
+
+      windowSet = true;
+
+      Serial.print("Window Set: ");
+      Serial.print(startHour);
+      Serial.print(" - ");
+      Serial.println(endHour);
+    }
+  }
+}
+
+// ================= TIME CHECK =================
+bool isActiveTime() {
+
+  if (!windowSet) return true;
+
+  if (startHour < endHour)
+    return (currentHour >= startHour && currentHour < endHour);
+  else
+    return (currentHour >= startHour || currentHour < endHour);
+}
+
+// ================= BUZZER (WORKING VERSION) =================
+void beep(int freq, int duration) {
+
+  ledcWriteTone(BUZZER_PIN, freq);
+  delay(duration);
+  ledcWriteTone(BUZZER_PIN, 0);
+  delay(50);
+}
+
+// ================= ALERT SYSTEM =================
+void alertSystem() {
+
+  Serial.println("MOTION DETECTED");
+
+  digitalWrite(LED_GREEN, HIGH);
+  beep(1200, 200);
+  digitalWrite(LED_GREEN, LOW);
+
+  digitalWrite(LED_YELLOW, HIGH);
+  beep(1800, 300);
+  digitalWrite(LED_YELLOW, LOW);
+
+  digitalWrite(LED_RED, HIGH);
+  beep(2500, 500);
+  digitalWrite(LED_RED, LOW);
+
+  Serial.println("Alert Completed");
+}
+
+// ================= LOOP =================
+void loop() {
+
+  readCommand();
+
+  int pirState = digitalRead(PIR_PIN);
+
+  static unsigned long lastTrigger = 0;
+
+  if (pirState == HIGH && isActiveTime()) {
+
+    if (millis() - lastTrigger > 3000) {
+
+      lastTrigger = millis();
+
+      Serial.println("----------------");
+      Serial.println("Motion Event Logged");
+
+      alertSystem();
+    }
+  }
+
+  delay(200);
+}
