@@ -1,0 +1,32 @@
+
+#include <DHT.h>
+#define DHTPIN 33
+#define DHTTYPE DHT11
+#define MQ 34
+#define LED 25
+DHT dht(DHTPIN,DHTTYPE);
+void setup(){
+Serial.begin(115200);
+pinMode(LED,OUTPUT);
+dht.begin();
+}
+void loop(){
+int gas=analogRead(MQ);
+float temp=dht.readTemperature();
+float hum=dht.readHumidity();
+Serial.print("Gas : ");
+Serial.println(gas);
+Serial.print("Temp : ");
+Serial.println(temp);
+Serial.print("Humidity : ");
+Serial.println(hum);
+if(gas>600){
+digitalWrite(LED,HIGH);
+Serial.println("Poor Air Quality");
+}
+else{
+digitalWrite(LED,LOW);
+Serial.println("Air Quality Good");
+}
+delay(2000);
+}
