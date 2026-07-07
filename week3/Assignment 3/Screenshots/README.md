@@ -12,7 +12,7 @@ Includes:
 - Sensor values
 - System status messages
 - Alert outputs
-
+ 
 ### 3. Project Demonstrations
 
 Includes working results of different IoT applications developed during the assignment.
