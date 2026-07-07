@@ -5,7 +5,7 @@ This folder Includes:
 - Actuator connections
 - Complete simulation layouts
 
-### 2. Program Output
+### 2. Program Output 
 
 Includes:
 - Serial Monitor readings
