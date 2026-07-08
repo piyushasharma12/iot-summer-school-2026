@@ -85,5 +85,4 @@ The simulation screenshots included in the **screenshots** folder were captured 
 
 PIYUSHA SHARMA
 ROLL NO. IOT027  
-SUMMER SCHOOL
-IIT JAMMU
+SUMMER SCHOOL(IIT JAMMU)
