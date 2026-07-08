@@ -1,11 +1,12 @@
 
 This folder Includes:
+
 - ESP32 connections
 - Sensor wiring
 - Actuator connections
 - Complete simulation layouts
 
-### 2. Program Output 
+### Program Output 
 
 Includes:
 - Serial Monitor readings
@@ -13,7 +14,7 @@ Includes:
 - System status messages
 - Alert outputs
  
-### 3. Project Demonstrations
+### Project Demonstrations
 
 Includes working results of different IoT applications developed during the assignment.
 
