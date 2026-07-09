@@ -1,3 +1,7 @@
+author piyusha sharma
+IOT027
+Summer School 26
+
 #include <Keypad.h>
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
