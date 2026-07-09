@@ -1,4 +1,8 @@
-int rows[] = {2,3,4,5};
+author piyusha sharma
+IOT027
+Summer School 26
+  
+  int rows[] = {2,3,4,5};
 int cols[] = {6,7,8,9};
 
 
