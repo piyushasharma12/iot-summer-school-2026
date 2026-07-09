@@ -1,4 +1,8 @@
-#include <Servo.h>
+author piyusha sharma
+IOT027
+Summer School 26
+  
+  #include <Servo.h>
 Servo myServo;
 
 void setup() {
