@@ -1,3 +1,7 @@
+author piyusha sharma
+IOT027
+Summer School 26
+
 int LDR = A0;
 int LED = 13;
 
