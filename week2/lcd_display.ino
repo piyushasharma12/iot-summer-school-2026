@@ -1,4 +1,8 @@
-#include <LiquidCrystal_I2C.h>
+author piyusha sharma
+IOT027
+Summer School 26
+  
+  #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd(0x20,16,2);
 void setup()
 {
