@@ -1,3 +1,7 @@
+author piyusha sharma
+IOT027
+Summer School 26
+  
 #include <WiFi.h>
 #include <DHT.h>
 
