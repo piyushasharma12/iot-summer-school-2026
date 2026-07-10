@@ -1,0 +1,15 @@
+# Arduino compiled files
+*.hex
+*.elf
+
+# Build folders
+build/
+
+# VS Code
+.vscode/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
